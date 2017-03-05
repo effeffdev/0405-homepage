@@ -1,0 +1,35 @@
+body {
+  animation: colorchange 20s ease infinite;
+  -webkit-animation: colorchange 20s ease infinite;
+  -moz-animtaion: colorchange 20s ease infinite;
+}
+
+@keyframes colorchange {
+  0%    {background: #fabfa1;}
+  33%   {background: #bada55;}
+  66%   {background: #64ddbb;}
+  100%  {background: #fabfa1;}
+}
+
+/*Safari and Chrome*/
+@-webkit-keyframes colorchange {
+  0%    {background: #fabfa1;}
+  33%   {background: #bada55;}
+  66%   {background: #64ddbb;}
+  100%  {background: #fabfa1;}
+}
+
+@-moz-keyframes colorchange {
+  0%    {background: #fabfa1;}
+  33%   {background: #bada55;}
+  66%   {background: #64ddbb;}
+  100%  {background: #fabfa1;}
+}
+
+#logo {
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+}
