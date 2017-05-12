@@ -1,0 +1,110 @@
+body {
+  animation: colorchange 40s ease infinite;
+  -webkit-animation: colorchange 40s ease infinite; /*Safari and Chrome*/
+  -moz-animtaion: colorchange 40s ease infinite; /*Firefox*/
+  -ms-animation: colorchange 40s ease infinite; /*Internet Explorer*/
+}
+
+/* Font definition */
+@font-face {
+  font-family: MyFutura;
+  src: local("fonts/futura/Futura Heavy.ttf"),
+       local("fonts/futura/Futura Std Heavy.ttf"),
+       url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}
+
+@keyframes colorchange {
+  0%    {background: #fee7ea;}
+  20%   {background: #d5dcfc;}
+  40%   {background: #d3b9c5;}
+  60%  {background: #fed4bc;}
+  80%  {background: #bafcf4;}
+  100%  {background: #efbfc8;}
+}
+
+/*Safari and Chrome*/
+@-webkit-keyframes colorchange {
+  0%    {background: #fee7ea;}
+  20%   {background: #d5dcfc;}
+  40%   {background: #d3b9c5;}
+  60%  {background: #fed4bc;}
+  80%  {background: #bafcf4;}
+  100%  {background: #efbfc8;}
+}
+
+/*Firefox*/
+@-moz-keyframes colorchange {
+  0%    {background: #fee7ea;}
+  20%   {background: #d5dcfc;}
+  40%   {background: #d3b9c5;}
+  60%  {background: #fed4bc;}
+  80%  {background: #bafcf4;}
+  100%  {background: #efbfc8;}
+}
+
+/*Internet Explorer*/
+@-ms-keyframes colorchange {
+  0%    {background: #fee7ea;}
+  20%   {background: #d5dcfc;}
+  40%   {background: #d3b9c5;}
+  60%  {background: #fed4bc;}
+  80%  {background: #bafcf4;}
+  100%  {background: #efbfc8;}
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+#logoWrapper {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 12em;
+  font-weight: bold;
+  color: white;
+  color: #fff;
+text-shadow: #fff 0 0 3px;
+}
+
+#linkbar {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  width: 40%;
+  bottom: 2%;
+  left: 30%;
+}
+
+#linkbar td {
+  text-align: center;
+}
+
+#enter{
+  width: 20%;
+  background: black;
+}
+
+.socialmedia {
+  width: 100%
+}
+
+.my-fa {
+  color: #ecf0f1;
+  font-size:42px !important;
+}
+.my-fa:hover{
+  color: #bdc3c7 !important;
+}
