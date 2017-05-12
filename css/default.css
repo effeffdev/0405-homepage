@@ -74,9 +74,12 @@ body {
   font-family: 'Amatic SC', cursive;
   font-size: 12em;
   font-weight: bold;
-  color: white;
   color: #fff;
 text-shadow: #fff 0 0 3px;
+}
+
+#logo:hover {
+  color: #000;
 }
 
 #linkbar {
@@ -112,4 +115,19 @@ text-shadow: #fff 0 0 3px;
 }
 .my-fa:hover{
   color: #bdc3c7 !important;
+}
+
+/* Disable text selection for specific elements */
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.nocursor {
+  cursor: url(../images/heart.png), auto;
 }
