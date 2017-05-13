@@ -3,6 +3,7 @@ body {
   -webkit-animation: colorchange 40s ease infinite; /*Safari and Chrome*/
   -moz-animtaion: colorchange 40s ease infinite; /*Firefox*/
   -ms-animation: colorchange 40s ease infinite; /*Internet Explorer*/
+  height: 100vh;
 }
 
 /* Font definition */
@@ -89,8 +90,6 @@ text-shadow: #fff 0 0 3px;
   position: absolute;
   padding: 0;
   border: 0;
-  width: 40%;
-  bottom: 2%;
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,21 +99,80 @@ text-shadow: #fff 0 0 3px;
   text-align: center;
 }
 
+.my-fa {
+  color: #ecf0f1;
+  font-size:6.5vh;
+}
+
+.fa-facebook:hover{
+  color: #3B5998;
+}
+
+.fa-instagram:hover{
+  color: #323232;
+}
+
+.fa-twitter:hover{
+  color: #1DA1F2;
+}
+
+.fa-snapchat:hover{
+  color: #FFFC00;
+}
+
+.fa-spotify:hover{
+  color: #1ED760;
+}
+
+.fa-apple:hover{
+  color: #FFFFFF;
+}
+
+.fa-soundcloud:hover{
+  color: #FF6700;
+}
+
+.fa-youtube-play:hover{
+  color: #E62117;
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .my-fa {
+      font-size:5.3vh;
+      color: black;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 599px) {
+    #linkbar {
+      width: 85%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    #linkbar {
+      width: 70%;
+    }
+    .my-fa {
+      font-size:6.5vh;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1089px) {
+    #linkbar {
+      width: 50%;
+    }
+}
+
+@media screen and (min-width: 1090px) {
+    #linkbar {
+      width: 40%;
+    }
+}
+
 #enter{
   width: 20%;
   background: black;
-}
-
-.socialmedia {
-  width: 100%
-}
-
-.my-fa {
-  color: #ecf0f1;
-  font-size:42px !important;
-}
-.my-fa:hover{
-  color: #bdc3c7 !important;
 }
 
 /* Disable text selection for specific elements */
