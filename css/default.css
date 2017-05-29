@@ -139,7 +139,6 @@ text-shadow: #fff 0 0 3px;
 @media screen and (min-width: 100px) and (max-width: 500px) {
     .my-fa {
       font-size:5.3vh;
-      color: black;
     }
 }
 
@@ -188,4 +187,31 @@ text-shadow: #fff 0 0 3px;
 
 .nocursor {
   cursor: url(../images/heart.png), auto;
+}
+
+.smWrapper {
+  position: relative;
+}
+
+.smFadeIn {
+  display: none;
+  position: absolute;
+    top: -100%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, 40%);
+}
+
+/* spotify extra */
+#spotifyWrapper {
+  position: relative;
+}
+
+#spotify-follow {
+  display: none;
+  position: absolute;
+    top: -80%;  /* position the top  edge of the element at the middle of the parent */
+    left: 180%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
 }

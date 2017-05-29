@@ -1,10 +1,15 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
+    <title>04/05</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script src="https://use.fontawesome.com/eaf5267b21.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+    <script src="js/ourscripts.js"></script>
 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -14,47 +19,90 @@
     <link rel="shortcut icon" href="images/logotemp.png">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-  </head>
+</head>
 
-  <body>
-
+<body>
+    <!-- facebook js sdk -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div id="wrapper">
-      <div id="logoWrapper">
-        <p id="logo" class="noselect nocursor">04/05</p>
-        <!--
+        <div id="logoWrapper">
+            <p id="logo" class="noselect nocursor">04/05</p>
+            <!--
         <br>
         <a id="enter" class="waves-effect waves-light btn">Enter</a>
       -->
-      </div>
+        </div>
 
-      <!-- to add hover effect to image use onmouseover and onmouseout in img tag -->
-      <div id="linkbar">
-        <a target="_blank" href="https://fb.me/0405music">
-          <i class="fa my-fa fa-facebook" ></i>
-        </a>
-        <a target="_blank" href="https://www.instagram.com/0405_music/">
-          <i class="fa my-fa fa-instagram" ></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/0405_music">
-          <i class="fa my-fa fa-twitter" ></i>
-        </a>
-        <a target="_blank" href="https://www.snapchat.com/add/snap0405music">
-          <i class="fa my-fa fa-snapchat" ></i>
-        </a>
-        <a target="_blank" href="https://open.spotify.com/artist/6AFljFauQ7OMhKIvNbdh4A">
-          <i class="fa my-fa fa-spotify"></i>
-        </a>
-        <a target="_blank" href="https://itunes.apple.com/at/artist/04-05/id1207590644">
-          <i class="fa fa-apple my-fa" ></i>
-        </a>
-        <a target="_blank" href="https://soundcloud.com/0405_music">
-          <i class="fa my-fa fa-soundcloud" ></i>
-        </a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCk3PcHL_vSG7vZT4FvR85Gw">
-          <i class="fa my-fa fa-youtube-play" ></i>
-        </a>
-      </div>
-      <!--<table id="linkbar">
+        <!-- to add hover effect to image use onmouseover and onmouseout in img tag -->
+        <div id="linkbar">
+            <div id="fbWrapper" class="smWrapper">
+                <div id="fb-like" class="smFadeIn">
+                    <div class="fb-like" data-href="https://www.facebook.com/0405music" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+                </div>
+                <a target="_blank" href="https://fb.me/0405music">
+                    <i class="fa my-fa fa-facebook"></i>
+                </a>
+            </div>
+            <a target="_blank" href="https://www.instagram.com/0405_music/">
+                <i class="fa my-fa fa-instagram"></i>
+            </a>
+            <div id="twitterWrapper" class="smWrapper">
+                <div id="twitter-follow" class="smFadeIn">
+                    <a href="https://twitter.com/0405_music" class="twitter-follow-button" data-show-count="false">Follow @0405_music</a>
+                    <script>
+                        ! function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                p = /^http:/.test(d.location) ? 'http' : 'https';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = p + '://platform.twitter.com/widgets.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+                <a target="_blank" href="https://twitter.com/0405_music">
+                    <i class="fa my-fa fa-twitter"></i>
+                </a>
+            </div>
+            <a target="_blank" href="https://www.snapchat.com/add/snap0405music">
+                <i class="fa my-fa fa-snapchat"></i>
+            </a>
+            <div id="spotifyWrapper" class="smWrapper">
+                <div id="spotify-follow" class="smFadeIn">
+                    <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6AFljFauQ7OMhKIvNbdh4A&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+                </div>
+                <a target="_blank" href="https://open.spotify.com/artist/6AFljFauQ7OMhKIvNbdh4A">
+                    <i class="fa my-fa fa-spotify"></i>
+                </a>
+            </div>
+            <a target="_blank" href="https://itunes.apple.com/at/artist/04-05/id1207590644">
+                <i class="fa fa-apple my-fa"></i>
+            </a>
+            <a target="_blank" href="https://soundcloud.com/0405_music">
+                <i class="fa my-fa fa-soundcloud"></i>
+            </a>
+            <div id="ytWrapper" class="smWrapper">
+                <div id="ytFollow" class="smFadeIn">
+                    <div class="g-ytsubscribe" data-channelid="UCk3PcHL_vSG7vZT4FvR85Gw" data-layout="default" data-count="default"></div>
+                </div>
+                <a target="_blank" href="https://www.youtube.com/channel/UCk3PcHL_vSG7vZT4FvR85Gw">
+                    <i class="fa my-fa fa-youtube-play"></i>
+                </a>
+            </div>
+        </div>
+        <!--<table id="linkbar">
         <tr>
           <td>
 
@@ -82,7 +130,7 @@
           </td>
         </tr>
       </table>-->
-  </div>
-</div>
-  </body>
+    </div>
+    </div>
+</body>
 </html
